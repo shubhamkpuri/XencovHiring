@@ -35,5 +35,7 @@ This API accepts stream of file from UI. Then validates and pass it to the serve
 
 ## Conclusion
 There were many approach to tackle this problem and the best one will be using stream-data from frontend and passing it to backend so that buffer size won't create a issue.
+We can parse a portion of the file on frontend and pass it to backend and after that we can validate the records and push 
+it the database.
 
-Those implementation are two-way communication implementation like using socket to show status of the data that has been already migrated.
+Another approach can be using socket.io and passing chunk of data retreiving the status of that particular chunk to show the validations that failed on UI.
